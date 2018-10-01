@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
-        //DataBaseHelper helper = DataBaseHelper.getHelper(this);
-      //  helper.create_db();
+        DataBaseHelper helper = DataBaseHelper.getHelper(this);
+       helper.create_db();
         toggle.syncState();
         drawer.openDrawer(GravityCompat.START);
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
@@ -48,16 +48,16 @@ public class MainActivity extends AppCompatActivity
         fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE);
         fragmentTransaction.replace(R.id.mainContainer, fragment, fragment.getTag());
         fragmentTransaction.commit();
-
-        Reader reader = new Reader(this);
-        try {
-            reader.startReader();
-            reader.writeInDb();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
+//
+//        Reader reader = new Reader(this);
+//        try {
+//            reader.startReader();
+//            reader.writeInDb();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        }
 
     }
 

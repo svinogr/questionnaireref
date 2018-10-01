@@ -18,7 +18,7 @@ import upump.info.questionnaireref.R;
  */
 
 public class DataBaseHelper extends SQLiteOpenHelper {
-    public static final int DATABASE_VERSION = 3;
+    public static final int DATABASE_VERSION = 1;
     public static final String DATABASE_NAME = "questionnaire.db";
     public static final String TABLE_QUESTION = "QUESTION";
     public static final String TABLE_ANSWER = "ANSWER";
@@ -160,8 +160,8 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-     /*   db.execSQL(CREATE_QUESTION_TABLE);
-        db.execSQL(CREATE_ANSWER_TABLE);*/
+        db.execSQL(CREATE_QUESTION_TABLE);
+        db.execSQL(CREATE_ANSWER_TABLE);
     }
 
     @Override

@@ -16,6 +16,6 @@
     <string name="drawer_up_text">Реф.Механик</string>
     <string name="subject_mail">Дельта Тест. Реф.Механик</string>
     <string name="email_mail">updeveloper3y@gmail.com</string>
-    <string name="data_base_path">/data/data/info.upump.questionnaireref/databases/</string>
+    <string name="data_base_path">/data/data/upump.info.questionnaireref/databases/</string>
     <string name="mail_subject">Дельта Тест. Реф.Механик</string>
 </resources>
